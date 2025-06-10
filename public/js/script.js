@@ -11,4 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
             languageLabel.textContent = "Español"
         }
     });
+    
+    var val = document.querySelector("#country");
+    val.addEventListener("change", ()=>{
+        var input_telefono = document.querySelector("#phone");
+        input_telefono.value = val.value + " " 
+        input_telefono.focus();
+    })
 });

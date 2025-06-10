@@ -15,7 +15,7 @@ return [
     'Carrusel_Exito_Acciones' => 'EL ÉXITO SE CONSTRUYE CON BUENAS ACCIONES',
     'Carrusel_Informacion' => 'Conviértete en Socio, conoce nuestro modelo de negocio',
     'Contacto_Titulo' => 'Contáctanos y te asesoramos',
-    'Contacto_Nombre' => 'Nombre...',
+    'Contacto_Nombre' => 'Nombre y apellido...',
     'Contacto_Telefono' => 'Teléfono...',
     'Contacto_Email' => 'Correo electrónico...',
     'Contacto_Mensaje' => 'Escribir mensaje...',

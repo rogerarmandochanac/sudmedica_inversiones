@@ -9,10 +9,21 @@
         </div>
         <form id="contact-form" action="{{route('contactanos.store')}}" method="post">
             @csrf
-            <input type="text" placeholder="{{ __('messages.Contacto_Nombre') }}" name="nombre">
-            <input type="text" placeholder="{{ __('messages.Contacto_Telefono') }}" name="telefono">
-            <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email">
-            <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje"></textarea>
+            <input type="text" placeholder="{{ __('messages.Contacto_Nombre') }}" name="nombre" required>
+            <div class="selected_country">
+                <select name="" id="country">
+                    <option value="+56">Chile</option>
+                    <option value="+52">Mexico</option>
+                    <option value="+1">USA</option>
+                    <option value="+1">Canada</option>
+                    <option value="+55">Brazil</option>
+                    <option value="+54">Argentina</option>
+                    
+                </select>
+                <input type="tel" name="" id="phone" placeholder="{{ __('messages.Contacto_Telefono')  }}" required>
+            </div>
+            <input type="email" placeholder="{{ __('messages.Contacto_Email') }}" name="email" required>
+            <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje" required></textarea>
             <input type="submit" value="{{ __('messages.Contacto_Enviar') }}">
         </form>
         <div class="loading-popup" id="loading-popup">
@@ -189,5 +200,3 @@
         });
     }
 })
-    </script>
-</div>

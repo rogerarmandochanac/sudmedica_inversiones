@@ -13,7 +13,7 @@ return [
     'Carrusel_Exito_Acciones' => 'SUCCESS IS BUILT WITH GOOD ACTIONS',
     'Carrusel_Informacion' => 'Become a Partner, learn about our business model',
     'Contacto_Titulo' => 'Contact us and we will advise you',
-    'Contacto_Nombre' => 'Name...',
+    'Contacto_Nombre' => 'Name and last name...',
     'Contacto_Telefono' => 'Phone...',
     'Contacto_Email' => 'Email...',
     'Contacto_Enviar' => 'Send',
