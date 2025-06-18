@@ -1,0 +1,92 @@
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    }
+
+.popup__content {
+    position: relative;
+    font-family: lato;
+    color: #114071;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 4px;
+    max-width:70vw;
+    width: 90%;
+    max-height: 90vh; /* Limita la altura del popup al 80% del viewport */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-y: auto; /* Habilita el scroll vertical si el contenido excede el tamaño */
+    }
+
+.popup__close {
+    position: absolute;
+    top: 20px; /* Espacio desde la parte superior */
+    right: 30px; /* Espacio desde la parte derecha */
+    font-size: 40px; /* Tamaño del botón */
+    font-weight: light;
+    color: #333;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 10; /* Asegura que el botón esté por encima del contenido */
+    transition: transform 0.3s ease; /* Transición suave para efectos */
+    color:#114071;
+    }
+
+.popup__info{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    gap:4rem;
+    }
+
+.popup__close:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el cursor */
+    color: #114071; /* Cambia el color al pasar el cursor */
+    }
+
+.popup__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align:left;
+    }
+
+.popup__ocupation{
+    text-align:left;
+    }
+
+.popup__description {
+    font-size: 20px;
+    color: #114071;
+    text-align: left; /* Justifica el texto para mejor legibilidad */
+    margin-top: 10px;
+    font-weight:300;
+    }
+
+.popup__img {
+    width: 100%;
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    }
+
+@media (max-width: 640px) {
+    .popup__info {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .popup__img{
+        margin:auto;
+    }
+
+}
